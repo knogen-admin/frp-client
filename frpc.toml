@@ -1,15 +1,6 @@
-serverAddr = "0.0.0.0"
+serverAddr = "hz.knogen.com"
 serverPort = 7000
 auth.token = "knogen"
-
-[[proxies]]
-name = "test-tcp"
-type = "tcp"
-localIP = "127.0.0.1"
-localPort = 22
-remotePort = 6000
-
-
 
 [[proxies]]
 name = "http_proxy"
@@ -17,5 +8,3 @@ type = "tcp"
 remotePort = 23333
 [proxies.plugin]
 type = "http_proxy"
-
-
