@@ -8,3 +8,11 @@ type = "tcp"
 remotePort = 23333
 [proxies.plugin]
 type = "http_proxy"
+
+[[proxies]]
+name = "socks5"
+type = "tcp"
+remotePort = 23334
+[proxies.plugin]
+type = "socks5"
+
