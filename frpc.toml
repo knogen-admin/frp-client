@@ -3,6 +3,20 @@ serverPort = 7000
 auth.token = "knogen"
 
 [[proxies]]
+name = "xtcp_socks5"
+type = "xtcp"
+secretKey = "ccwzz"
+[proxies.plugin]
+type = "socks5"
+
+[[proxies]]
+name = "stcp_socks5"
+type = "stcp"
+secretKey = "ccwzz"
+[proxies.plugin]
+type = "socks5"
+
+[[proxies]]
 name = "http_proxy"
 type = "tcp"
 remotePort = 23333
