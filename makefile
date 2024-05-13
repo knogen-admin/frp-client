@@ -1,2 +1,2 @@
 main:
-	./frpc -c frpc.toml
+	./frpc -c frpc.toml > /dev/zero
