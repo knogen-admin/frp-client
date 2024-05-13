@@ -1,0 +1,22 @@
+serverAddr = "hz.knogen.com"
+serverPort = 7000
+auth.token = "knogen"
+
+[[visitors]]
+name = "stcp-visitor"
+type = "stcp"
+serverName = "stcp_socks5"
+secretKey = "ccwzz"
+bindPort = -1
+
+[[visitors]]
+name = "p2p_socket_visitor"
+type = "xtcp"
+serverName = "xtcp_socks5"
+secretKey = "ccwzz"
+bindAddr = "127.0.0.1"
+bindPort = 6000
+# when automatic tunnel persistence is required, set it to true
+keepTunnelOpen = false
+fallbackTo = "stcp-visitor"
+fallbackTimeoutMs = 1000
